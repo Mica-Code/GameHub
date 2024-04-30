@@ -15,19 +15,22 @@ function App() {
 					lg: `"nav nav" "aside main"`,
 				}}
 				templateColumns={{
-					base:'1fr',
-					lg:'200px 1fr'
+					base: "1fr",
+					lg: "200px 1fr",
 				}}>
 				<GridItem area={"nav"}>
 					<NavBar />
 				</GridItem>
 				<Show above="lg">
 					<GridItem area={"aside"} paddingX={5}>
-						<GenreList selectedGenre={(genre) => setSelectedGenre(genre)}/>
+						<GenreList
+							selectedGenre={selectedGenre}
+							onSelectedGenre={(genre) => setSelectedGenre(genre)}
+						/>
 					</GridItem>
 				</Show>
 				<GridItem area={"main"}>
-					<GameGrid selectedGenre={selectedGenre}/>
+					<GameGrid selectedGenre={selectedGenre} />
 				</GridItem>
 			</Grid>
 		</>
