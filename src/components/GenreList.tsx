@@ -1,16 +1,9 @@
 import {
 	Button,
-	Card,
-	CardBody,
 	HStack,
 	Image,
 	List,
 	ListItem,
-	Skeleton,
-	SkeletonCircle,
-	SkeletonText,
-	Spinner,
-	Text,
 } from "@chakra-ui/react";
 import useGenre, { Genre } from "../hooks/useGenre";
 import getCroppedImageUrl from "../services/image-url";
