@@ -1,4 +1,4 @@
-import { Image, ImageProps, propNames } from "@chakra-ui/react";
+import { Image, ImageProps } from "@chakra-ui/react";
 import bullsEye from "../assets/direct-hit.svg"
 import neutral from "../assets/neutral.svg"
 import thumbsUp from "../assets/thumbs.svg"
